@@ -1,0 +1,21 @@
+class My_Stack {
+    private ArrayList<Integer> arr=new ArrayList<Integer>();
+    // private int capacity=100;
+    public void push(int x) {
+        // code here
+        arr.add(x);
+        
+    }
+
+    public int pop() {
+        
+        // code here
+        if(arr.isEmpty()) {
+            // System.out.println("Stack Underflow");
+            return -1;
+        }
+        int value=arr.get(arr.size()-1);
+        arr.remove(arr.size()-1);
+        return value;
+    }
+}
